@@ -1,0 +1,140 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#demos {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1a73e8;
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 28px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.videoView {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    height: 480px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.output_canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+#liveView {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#currentPoseDisplay {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background: rgba(248, 249, 250, 0.7);
+    border-radius: 4px;
+}
+
+.gesture-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.gesture-buttons button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #1a73e8 !important;
+    color: white !important;
+}
+
+.model-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.model-controls button {
+    background-color: #1a73e8 !important;
+    color: white !important;
+    padding: 10px 20px;
+}
+
+#webcamButton {
+    display: block;
+    margin: 20px auto;
+    background-color: #1a73e8 !important;
+    color: white !important;
+    padding: 10px 20px;
+}
+
+#results {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#statsDisplay {
+    background: rgba(248, 249, 250, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#confusionMatrix {
+    max-width: 500px;
+    margin: 20px auto;
+    display: block;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+} 
