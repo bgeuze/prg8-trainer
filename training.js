@@ -260,16 +260,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    document.getElementById('trainRock').addEventListener('click', () => {
-        currentLabel = 'rock';
+    document.getElementById('trainA').addEventListener('click', () => {
+        currentLabel = 'A';
     });
 
-    document.getElementById('trainPaper').addEventListener('click', () => {
-        currentLabel = 'paper';
+    document.getElementById('trainB').addEventListener('click', () => {
+        currentLabel = 'B';
     });
 
-    document.getElementById('trainScissors').addEventListener('click', () => {
-        currentLabel = 'scissors';
+    document.getElementById('trainC').addEventListener('click', () => {
+        currentLabel = 'C';
+    });
+
+    document.getElementById('trainD').addEventListener('click', () => {
+        currentLabel = 'D';
     });
 
     document.getElementById('evaluateButton').addEventListener('click', async () => {
@@ -288,8 +292,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         // Initialize confusion matrix
-        const labels = ['rock', 'paper', 'scissors'];
-        const matrix = Array(3).fill().map(() => Array(3).fill(0));
+        const labels = ['A', 'B', 'C', 'D'];
+        const matrix = Array(4).fill().map(() => Array(4).fill(0));
         
         // Debug logging
         const distribution = testData.reduce((acc, item) => {
